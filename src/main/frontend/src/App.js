@@ -51,13 +51,13 @@ function App() {
               return loggedIn ? (
                 <Redirect to="/home" />
               ) : (
-                <Redirect to="/login" />
+                <Redirect to="/api/v1/authenticate" />
               );
             }}
           />
           <PrivateRoute path="/home" exact component={Home} />
           <Route path="/register" exact component={Register} />
-          <Route path="/login" exact component={Login} />
+          <Route path="/api/v1/authenticate" exact component={Login} />
           <PrivateRoute path="/my-listings" exact component={ViewMyListings} />
           <PrivateRoute path="/post-listing" exact component={CreateListing} />
           <PrivateRoute path="/search" exact component={Search} />

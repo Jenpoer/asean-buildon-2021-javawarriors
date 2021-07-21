@@ -14,7 +14,7 @@ import java.util.List;
  * Controller for Deals
  */
 
-@CrossOrigin
+//@CrossOrigin
 @RestController
 @RequestMapping("/api/v1/deal/")
 public class DealController {

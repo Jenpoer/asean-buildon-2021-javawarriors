@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * Controller for Buyer QnA
  */
-@CrossOrigin
+//@CrossOrigin
 @RestController
 @RequestMapping("/api/v1/seller-qna/")
 public class SellerQnAController {

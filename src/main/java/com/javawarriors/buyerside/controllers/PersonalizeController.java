@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * Controller for Recommendations
  */
-@CrossOrigin
+//@CrossOrigin
 @RestController
 @RequestMapping("/api/v1/recommend/")
 public class PersonalizeController {

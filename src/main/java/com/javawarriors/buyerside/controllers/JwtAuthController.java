@@ -23,7 +23,7 @@ import com.javawarriors.buyerside.model.JwtResponse;
 import com.javawarriors.buyerside.model.UserDTO;
 
 @RestController
-@CrossOrigin
+//@CrossOrigin
 @RequestMapping("/api/v1")
 public class JwtAuthController {
 

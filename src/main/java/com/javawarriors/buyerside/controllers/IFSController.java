@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
  * Controller for want to buy listings
  */
 
-@CrossOrigin
+//@CrossOrigin
 @RestController
 @RequestMapping("/api/v1/ifs-listing/")
 public class IFSController {

@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
  */
 
 
-@CrossOrigin
+//@CrossOrigin
 @RestController
 @RequestMapping("/api/v1/wtb-listing/")
 public class WTBController {

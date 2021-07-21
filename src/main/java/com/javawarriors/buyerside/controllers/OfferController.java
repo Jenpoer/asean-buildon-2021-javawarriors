@@ -20,7 +20,7 @@ import java.util.List;
  * Controller for Offers
  */
 
-@CrossOrigin
+//@CrossOrigin
 @RestController
 @RequestMapping("/api/v1/offer/")
 public class OfferController {
