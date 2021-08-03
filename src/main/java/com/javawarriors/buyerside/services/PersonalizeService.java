@@ -67,9 +67,14 @@ public class PersonalizeService {
     private List<Long> getUserRecs(Long userId, String campaignArn, String filterArn, String prefix) {
         List<Long> itemIdsList = new ArrayList<>();
         try {
-            GetRecommendationsRequest recommendationsRequest = GetRecommendationsRequest.builder()
-                    .campaignArn(campaignArn).filterArn(filterArn).numResults(10).userId(String.format("U%02d", userId))
-                    .build();
+            GetRecommendationsRequest.Builder recommendationsRequestBuilder = GetRecommendationsRequest.builder()
+                    .campaignArn(campaignArn).numResults(10).userId(String.format("U%02d", userId));
+
+            if (userId.equals(Long.valueOf(26))) {
+                recommendationsRequestBuilder = recommendationsRequestBuilder.filterArn(filterArn);
+            }
+
+            GetRecommendationsRequest recommendationsRequest = recommendationsRequestBuilder.build();
 
             GetRecommendationsResponse recommendationsResponse = personalizeRuntimeClient
                     .getRecommendations(recommendationsRequest);
